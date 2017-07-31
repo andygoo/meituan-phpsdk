@@ -155,7 +155,6 @@ class MeituanSDK
         $res = self::http_post($url, $param);
         if ($res) {
             $res = json_decode($res, true);
-            、
             return $res;
         }
         return false;
