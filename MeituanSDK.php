@@ -202,7 +202,7 @@ class MeituanSDK
                 $v = 'false';
             if ($v === true)
                 $v = 'true';
-            if (empty($v))
+            if (empty($v) && $v !== 0)
                 continue;
             $str .= $k . $v;
         }
